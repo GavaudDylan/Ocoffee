@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poetsen+One&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amaranth", sans-serif;
+  padding: 0;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2,
+h3 {
+  border: solid 2px #8c5042;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  padding: 15px 30px 15px 30px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2;
+}
+
+p {
+  text-align: justify;
+  border: solid 1px #d9a689;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px 15px 30px;
+  margin-bottom: 20px;
+  border: solid 2px #8c5042;
+  border-radius: 10px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  align-content: center;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  padding-left: 10px;
+}
+
+img.header-logo {
+  height: 30px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 940px) {
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-up {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .section-up p {
+    margin-bottom: 20px;
+  }
+
+  .section-down p {
+    margin-bottom: 20px;
+  }
+
+  .home-img {
+    width: 300px;
+    margin: 20px 0 20px 0;
+    align-self: center;
+  }
+
+  .button-catalog {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-discover {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: right;
+  }
+
+  footer li {
+    padding-left: 5px;
+  }
+}
