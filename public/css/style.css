@@ -69,10 +69,6 @@ h2 {
   padding: 20px 30px 20px 30px;
 }
 
-h2.catalog-title {
-  margin-bottom: 20px;
-}
-
 h3 {
   font-size: 1.3em;
   text-align: center;
@@ -201,4 +197,12 @@ footer li {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+h2.catalog-title {
+  margin-bottom: 20px;
+  background-image: url("/images/coffees/691550753.png");
+  background-position: 20% 40%;
+  background-size: 150%;
+  padding: 100px 0 100px 0;
 }
