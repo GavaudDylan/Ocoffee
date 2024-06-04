@@ -4,7 +4,7 @@
     <body>
         <main>
             <section class="section-up">
-                <h2>Bienvenue sur notre boutique oCoffes</h2>
+                <h2 class="home-title">Bienvenue sur notre boutique oCoffes</h2>
                 <div class="section-up_content">
                     <div class="section-up_sub-content">
                         <p>Découvrez la boutique de café des frères Jean et Jacques Pepper, où l'atmosphère chaleureuse
@@ -20,7 +20,9 @@
                             café.
                         </p>
                         <div class="button-catalog">
-                            <button class="button-catalog_content" href="">Voir le catalogue</button>
+                            <button class="button-catalog_content">
+                                <a href="/catalog">Voir le catalogue</a>
+                            </button>
                         </div>
                     </div>
                     <img class="home-img" src="images/about.jpg" alt="Image de plusieurs tasses de café">
@@ -28,45 +30,7 @@
             </section>
             <section class="section-down">
                 <h3>Nouveautés</h3>
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ipsa explicabo
-                        asperiores
-                        illum
-                        consequatur id minus quod accusamus error eveniet cumque, nihil similique, corporis voluptate
-                        quos
-                        optio
-                        officia
-                        officiis!</p>
-                    <div class="button-discover">
-                        <button class="button-discover_content">Découvrir</button>
-                    </div>
-                </article>
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ipsa explicabo
-                        asperiores
-                        illum
-                        consequatur id minus quod accusamus error eveniet cumque, nihil similique, corporis voluptate
-                        quos
-                        optio
-                        officia
-                        officiis!</p>
-                    <div class="button-discover">
-                        <button class="button-discover_content">Découvrir</button>
-                    </div>
-                </article>
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ipsa explicabo
-                        asperiores
-                        illum
-                        consequatur id minus quod accusamus error eveniet cumque, nihil similique, corporis voluptate
-                        quos
-                        optio
-                        officia
-                        officiis!</p>
-                    <div class="button-discover">
-                        <button class="button-discover_content">Découvrir</button>
-                    </div>
-                </article>
+                <%- include('../partials/articles') %>
             </section>
         </main>
     </body>

@@ -5,9 +5,13 @@
 }
 
 body {
+  height: 100%;
   font-family: "Amaranth", sans-serif;
-  padding: 0;
-  margin: 20px;
+  padding: 20px;
+  background-color: var(--color-light-cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -50,7 +54,8 @@ h1 {
   font-size: 2em;
 }
 
-h2,
+h2.home-title,
+h2.catalog-title,
 h3 {
   color: var(--color-brown);
   border: solid 2px var(--color-cream);
@@ -59,9 +64,13 @@ h3 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: center;
-  padding: 15px 30px 15px 30px;
+  padding: 20px 30px 20px 30px;
+}
+
+h2.catalog-title {
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -112,7 +121,9 @@ button {
 button.button-discover_content {
   margin-bottom: 20px;
 }
-
+footer {
+  margin-top: auto;
+}
 footer p {
   color: black;
   border: solid 2px var(--color-light-brown);
@@ -184,4 +195,10 @@ footer li {
     margin-right: 20px;
     padding: 50px;
   }
+}
+
+.section-catalog {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
