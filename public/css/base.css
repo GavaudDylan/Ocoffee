@@ -1,0 +1,16 @@
+/* ==== Variables ==== */
+
+:root {
+  --color-dark: #261420;
+  --color-brown: #592c28;
+  --color-light-brown: #8c5042;
+  --color-cream: #d9a689;
+  --color-milk: #f2e8df;
+}
+
+/* Custom reset */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
