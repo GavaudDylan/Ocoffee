@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Amaranth", sans-serif;
   padding: 20px;
-  background-color: var(--color-light-cream);
+  background-color: var(--color-withe-milk);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ main {
   justify-content: space-between;
   padding: 30px 30px 30px 30px;
   margin: 20px 0 20px 0;
-  border: solid 2px var(--color-light-brown);
+  border: solid 2px var(--color-brown);
   background-color: var(--color-light-brown);
   border-radius: 10px;
 }
@@ -58,7 +58,7 @@ h2.home-title,
 h2.catalog-title,
 h3 {
   color: var(--color-brown);
-  border: solid 2px var(--color-cream);
+  border: solid 2px var(--color-light-brown);
   background-color: var(--color-cream);
   border-radius: 10px;
 }
@@ -88,16 +88,32 @@ p {
 button {
   color: var(--color-brown);
   background-color: var(--color-cream);
-  border: solid 2px var(--color-cream);
+  border: solid 2px var(--color-light-brown);
   border-radius: 10px;
   padding: 10px;
-  margin-top: 20px;
 }
 
 .section-up {
   display: flex;
   flex-direction: column;
   align-self: center;
+}
+
+.section-up p {
+  border: solid 2px var(--color-brown);
+}
+
+.section-down {
+  display: flex;
+
+  gap: 20px;
+}
+
+article {
+  background-color: var(--color-milk);
+  border: solid 2px var(--color-brown);
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .home-img {
@@ -122,7 +138,7 @@ footer {
 }
 footer p {
   color: black;
-  border: solid 2px var(--color-light-brown);
+  border: solid 2px var(--color-brown);
   background-color: var(--color-light-brown);
   border-radius: 10px;
   text-align: center;
@@ -136,7 +152,7 @@ footer ul {
 }
 
 footer li {
-  border: solid 2px var(--color-light-brown);
+  border: solid 2px var(--color-brown);
   background-color: var(--color-light-brown);
   border-radius: 10px;
   padding: 5px;
@@ -167,6 +183,10 @@ footer li {
   button.button-catalog_content {
     margin-top: 20px;
   }
+
+  .section-down {
+    display: contents;
+  }
 }
 
 @media screen and (min-width: 941px) {
@@ -191,7 +211,13 @@ footer li {
     margin-right: 20px;
     padding: 50px;
   }
+
+  .button-view_allArticles {
+    margin-right: auto;
+  }
 }
+
+/* catalog */
 
 .section-catalog {
   display: flex;
@@ -205,4 +231,26 @@ h2.catalog-title {
   background-position: 20% 40%;
   background-size: 150%;
   padding: 100px 0 100px 0;
+}
+
+/* shop */
+
+.shop-illustration_img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--color-light-brown);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.shop-illustration_img-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.detail-container p {
+  border: solid 2px var(--color-light-brown);
+  padding: 200px 0 200px 0;
+  margin-bottom: 20px;
 }

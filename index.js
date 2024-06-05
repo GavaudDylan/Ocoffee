@@ -4,9 +4,6 @@ require("dotenv").config();
 // Importe les dépendances tiers
 const express = require("express");
 
-// Pour les coockies
-// const expressSession = require("express-session");
-
 // Importe les dépendances locales
 const router = require("./app/router");
 
