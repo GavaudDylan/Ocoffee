@@ -252,5 +252,5 @@ h2.catalog-title {
 .detail-container p {
   border: solid 2px var(--color-light-brown);
   padding: 200px 0 200px 0;
-  margin-bottom: 20px;
+  margin: 0 250px 20px 250px;
 }
