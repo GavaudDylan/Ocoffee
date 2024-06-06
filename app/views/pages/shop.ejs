@@ -3,11 +3,24 @@
     <body>
         <main>
             <div class="shop-illustration_img-container">
-                <img src="/images/coffees/100955890.png" alt="Image de graines de café">
             </div>
             <div class="detail-container">
-                <h4></h4>
-                <p></p>
+                <div class="detail-container_content">
+                    <h4>
+                        <%= espresso.name %>
+                    </h4>
+                    <p>Descriptif: <%= espresso.description %>
+                    </p>
+                    <p>Référence: <%= espresso.reference %>
+                    </p>
+                    <p>Origine: <%= espresso.origin %>
+                    </p>
+                    <p>Prix au kg: <%=espresso.price_kg %> €
+                    </p>
+                    <p>Disponibilité: <%=espresso.available ? "Oui" : "Non" %>
+                    </p>
+                    <p></p>
+                </div>
             </div>
         </main>
     </body>

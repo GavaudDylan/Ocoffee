@@ -242,15 +242,26 @@ h2.catalog-title {
   border: solid 2px var(--color-light-brown);
   border-radius: 10px;
   margin-bottom: 20px;
+  background-image: url("/images/coffees/100955890.png");
+  padding: 100px 0 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.shop-illustration_img-container img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.detail-container p {
+.detail-container {
+  display: flex;
+  flex-direction: column;
   border: solid 2px var(--color-light-brown);
-  padding: 200px 0 200px 0;
-  margin: 0 250px 20px 250px;
+  border-radius: 10px;
+  background-color: var(--color-milk);
+  height: 80%;
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.detail-container_content {
+  padding: 100px 50px 100px 50px;
+}
+
+.detail-container h4 {
 }

@@ -1,41 +1,21 @@
-<section class="section-down">
-    <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ipsa explicabo
-            asperiores
-            illum
-            consequatur id minus quod accusamus error eveniet cumque, nihil similique, corporis voluptate
-            quos
-            optio
-            officia
-            officiis!</p>
-        <div class="button-discover">
-            <button class="button-discover_content">Découvrir</button>
-        </div>
-    </article>
-    <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ipsa explicabo
-            asperiores
-            illum
-            consequatur id minus quod accusamus error eveniet cumque, nihil similique, corporis voluptate
-            quos
-            optio
-            officia
-            officiis!</p>
-        <div class="button-discover">
-            <button class="button-discover_content">Découvrir</button>
-        </div>
-    </article>
-    <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequuntur ipsa explicabo
-            asperiores
-            illum
-            consequatur id minus quod accusamus error eveniet cumque, nihil similique, corporis voluptate
-            quos
-            optio
-            officia
-            officiis!</p>
-        <div class="button-discover">
-            <button class="button-discover_content">Découvrir</button>
-        </div>
-    </article>
-</section>
+<article class="detail-container">
+    <div class=" detail-container_content">
+        <h4>
+            <%= coffee.name %>
+        </h4>
+        <p>Descriptif: <%= coffee.description %>
+        </p>
+        <p>Référence: <%= coffee.reference %>
+        </p>
+        <p>Origine: <%= coffee.origin %>
+        </p>
+        <p>Prix au kg: <%=coffee.price_kg %> €
+        </p>
+        <p>Disponibilité: <%=coffee.available ? "Oui" : "Non" %>
+        </p>
+        <p></p>
+    </div>
+    <div class="button-discover">
+        <button class="button-discover_content">Découvrir</button>
+    </div>
+</article>

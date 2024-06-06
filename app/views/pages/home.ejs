@@ -28,7 +28,11 @@
                 </div>
             </section>
             <h3>Nouveautés</h3>
-            <%- include('../partials/articles') %>
+            <section class="section-down">
+                <% coffees.slice(0, 3).forEach(coffee=> { %>
+                    <%- include('../partials/articles', { coffee }) %>
+                        <% }); %>
+            </section>
         </main>
     </body>
 

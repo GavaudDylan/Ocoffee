@@ -4,10 +4,14 @@
         <main>
             <section class="section-catalog">
                 <div>
-                    <h2 class="catalog-title">Notre catalogue</h2>
+                    <h2 class="catalog-title">
+                        Notre catalogue
+                    </h2>
                 </div>
-                <%- include('../partials/articles') %>
-                    <button class="button-view_allArticles">Voir tout</button>
+                <% coffees.slice(0, 3).forEach(coffee=> { %>
+                    <%- include('../partials/articles', { coffee }) %>
+                        <% }); %>
+                            <button class="button-view_allArticles">Voir tout</button>
         </main>
     </body>
     </section>
