@@ -3,19 +3,19 @@
         <h4>
             <%= coffee.name %>
         </h4>
-        <p>Descriptif: <%= coffee.description %>
-        </p>
-        <p>Référence: <%= coffee.reference %>
+        <p>
+            <%= coffee.description %>
         </p>
         <p>Origine: <%= coffee.origin %>
         </p>
-        <p>Prix au kg: <%=coffee.price_kg %> €
-        </p>
-        <p>Disponibilité: <%=coffee.available ? "Oui" : "Non" %>
+        <p>
+            Disponibilité : <%=coffee.available ? "En stock" : "Rupture de stock" %>
         </p>
         <p></p>
     </div>
     <div class="button-discover">
-        <button class="button-discover_content">Découvrir</button>
+        <button class="button-discover_content">
+            <a href="/detail/<%= coffee.id %>">Découvrir</a>
+        </button>
     </div>
 </article>

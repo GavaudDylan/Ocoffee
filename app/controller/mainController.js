@@ -28,11 +28,30 @@ const mainController = {
         .send(`An error occured with the database :\n${error.message}`);
     }
   },
+
+  async detailPage(req, res, next) {
+    try {
+      const coffeId = parseInt(req.params.id);
+      const detailCoffe = await dataMapper.getCoffeById(coffeId);
+      if (!detailCoffe) {
+        next;
+        return;
+      }
+      res.render("pages/detail", {
+        detailCoffe,
+      });
+    } catch (error) {
+      console.error(error);
+      res
+        .status(500)
+        .send(`An error occured with the database :\n${error.message}`);
+    }
+  },
+
   async shopPage(req, res, next) {
     try {
       const espressoId = 1;
       const espresso = await dataMapper.getCoffeById(espressoId);
-      console.log(espresso);
       if (!espresso) {
         next;
         return;

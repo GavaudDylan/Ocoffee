@@ -1,0 +1,24 @@
+<article class="detail-container">
+    <div class=" detail-container_content">
+        <h4>
+            <%= detailCoffe.name %>
+        </h4>
+        <p>
+            <%= detailCoffe.description %>
+        </p>
+        <p>Référence: <%= detailCoffe.reference %>
+        </p>
+        <p>Origine: <%= detailCoffe.origin %>
+        </p>
+        <p>Prix au kg: <%=detailCoffe.price_kg %> €
+        </p>
+        <p>Disponibilité : <%=detailCoffe.available ? "En stock" : "Rupture de stock" %>
+        </p>
+        <p></p>
+    </div>
+    <div class="button-discover">
+        <button class="button-discover_content">
+            <a href="/">Retour</a>
+        </button>
+    </div>
+</article>
