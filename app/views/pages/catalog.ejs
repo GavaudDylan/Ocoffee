@@ -2,17 +2,20 @@
 
     <body>
         <main>
-            <section class="section-catalog">
-                <div>
-                    <h2 class="catalog-title">
-                        Notre catalogue
-                    </h2>
-                </div>
-                <% coffees.slice(0, 3).forEach(coffee=> { %>
-                    <%- include('../partials/articles', { coffee }) %>
+            <div>
+                <h2 class="catalog-title">
+                    Notre catalogue
+                </h2>
+            </div>
+            <section class="section-down">
+                <% coffees.forEach((detailCoffe, index)=> { %>
+                    <%- include('../partials/articleDetail', { detailCoffe, hidden: index>= 3 }) %>
                         <% }); %>
-                            <button class="button-view_allArticles">Voir tout</button>
+
+            </section>
+            <button id="viewAllButton" class="button-view_allArticles">Voir tout</button>
         </main>
+        <script src="/js/catalog.js"></script>
     </body>
     </section>
 

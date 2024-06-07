@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:reset": "psql -U ocoffee_admin -d ocoffee -f ./data/create_db.sql",
     "db:run": "psql -U ocoffee_admin -d ocoffee -h localhost"

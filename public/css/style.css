@@ -105,6 +105,7 @@ button {
 
 .section-down {
   display: flex;
+  flex-wrap: wrap;
 
   gap: 20px;
 }
@@ -133,6 +134,15 @@ article {
 button.button-discover_content {
   margin-bottom: 20px;
 }
+
+#viewAllButton {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
 footer {
   margin-top: auto;
 }
