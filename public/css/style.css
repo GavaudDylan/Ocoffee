@@ -77,7 +77,6 @@ h3 {
 }
 
 p {
-  text-align: justify;
   color: var(--color-brown);
   border: solid 1px var(--color-milk);
   background-color: var(--color-milk);
@@ -106,8 +105,26 @@ button {
 .section-down {
   display: flex;
   flex-wrap: wrap;
-
   gap: 20px;
+  justify-content: center; /* Ajoute cette ligne pour centrer */
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribution uniforme des éléments */
+  text-align: center;
+  background-color: var(--color-milk);
+  border: solid 2px var(--color-brown);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px; /* Limite la largeur maximale */
+}
+
+
+.detail-container h4 {
+  margin-top: 20px; /* Ajoute une marge en haut pour le titre */
 }
 
 article {
@@ -133,6 +150,9 @@ article {
 
 button.button-discover_content {
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
 }
 
 #viewAllButton {
@@ -169,109 +189,192 @@ footer li {
   margin: 0 5px 0 5px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 940px) {
+@media screen and (max-width: 600px) {
   h2 {
     margin-bottom: 20px;
   }
-
+  
   .header-nav ul {
     display: flex;
     flex-direction: column;
   }
-
+  
   main {
     display: flex;
     flex-direction: column;
   }
-
+  
   .home-img {
     width: 100%;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     align-self: center;
   }
-
+  
   button.button-catalog_content {
     margin-top: 20px;
   }
-
+  
   .section-down {
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les articles sur petits écrans */
+  }
+  
+  .detail-container {
+    width: 100%;
+    max-width: 300px; /* Limite la largeur maximale */
+  }
+  
+  #viewAllButton {
+    max-width: 150px;
+    margin: 0 auto 20px; /* Centre le bouton sur petits écrans */
+    display: block;
+  }
+  
+  .button-discover_content {
+    max-width: 150px;
+    margin: 0 auto; /* Centre le bouton sur petits écrans */
+    display: block;
+  }
+  
+  h2.catalog-title {
+    margin-bottom: 20px;
+    background-image: url("/images/coffees/691550753.png"); /* Chemin correct */
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: var(--color-brown);
+    border: solid 2px var(--color-light-brown);
+    background-color: var(--color-cream);
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 940px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-img {
+    width: 100%;
+    margin: 20px 0;
+    align-self: center;
+  }
+  
+  button.button-catalog_content {
+    margin-top: 20px;
+  }
+  
+  .section-down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centre les articles sur écrans moyens */
+  }
+  
+  .detail-container {
+    width: 100%;
+    max-width: 300px; /* Limite la largeur maximale */
+    flex-basis: 300px; /* Assure une base de taille uniforme */
+    flex-grow: 1; /* Chaque article prend également de la place */
+  }
+  
+  #viewAllButton {
+    max-width: 150px;
+    margin: 0 auto 20px; /* Centre le bouton sur écrans moyens */
+    display: block;
+  }
+  
+  .button-discover_content {
+    max-width: 150px;
+    margin: 0 auto; /* Centre le bouton sur écrans moyens */
+    display: block;
+  }
+  
+  h2.catalog-title {
+    margin-bottom: 20px;
+    background-image: url("/images/coffees/691550753.png");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: var(--color-brown);
+    border: solid 2px var(--color-light-brown);
+    background-color: var(--color-cream);
+    border-radius: 10px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 941px) {
   .home-img {
     width: 50%;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
   }
-
+  
   .section-up p {
     margin-bottom: 20px;
   }
-
+  
   .section-up_content {
     display: flex;
   }
-
+  
   .section-up_sub-content {
     align-content: center;
   }
-
+  
   .section-up_sub-content p {
     margin-right: 20px;
     padding: 50px;
   }
-
-  .button-view_allArticles {
-    margin-right: auto;
+  
+  .section-down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centre les articles sur grands écrans */
+  }
+  
+  .detail-container {
+    width: 100%;
+    max-width: 300px; /* Limite la largeur maximale */
+  }
+  
+  #viewAllButton {
+    max-width: 150px;
+    margin: 0 auto 20px; /* Centre le bouton sur grands écrans */
+    display: block;
+  }
+  
+  .button-discover_content {
+    max-width: 150px;
+    margin: 0 auto; /* Centre le bouton sur grands écrans */
+    display: block;
+  }
+  
+  h2.catalog-title {
+    margin-bottom: 20px;
+    background-image: url("/images/coffees/691550753.png");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    color: var(--color-brown);
+    border: solid 2px var(--color-light-brown);
+    background-color: var(--color-cream);
+    border-radius: 10px;
+    text-align: center;
   }
 }
 
-/* catalog */
 
-.section-catalog {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-h2.catalog-title {
-  margin-bottom: 20px;
-  background-image: url("/images/coffees/691550753.png");
-  background-position: 20% 40%;
-  background-size: 150%;
-  padding: 100px 0 100px 0;
-}
-
-/* shop */
-
-.shop-illustration_img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px var(--color-light-brown);
-  border-radius: 10px;
-  margin-bottom: 20px;
-  background-image: url("/images/coffees/100955890.png");
-  padding: 100px 0 100px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.detail-container {
-  display: flex;
-  flex-direction: column;
-  border: solid 2px var(--color-light-brown);
-  border-radius: 10px;
-  background-color: var(--color-milk);
-  height: 80%;
-  width: 65%;
-  margin-bottom: 20px;
-}
-
-.detail-container_content {
-  padding: 100px 50px 100px 50px;
-}
-
-.detail-container h4 {
-}

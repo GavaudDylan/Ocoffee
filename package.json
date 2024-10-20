@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:reset": "psql -U ocoffee_admin -d ocoffee -f ./data/create_db.sql",
-    "db:run": "psql -U ocoffee_admin -d ocoffee -h localhost"
+    "db:reset": "psql -U ocoffee -d ocoffee -f ./data/create_db.sql",
+    "db:run": "psql -U ocoffee -d ocoffee -h localhost"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "ejs": "^3.1.10",
     "eslint": "^9.4.0",
     "express": "^4.19.2",
+    "nodemon": "^3.1.7",
     "pg": "^8.11.5"
   }
 }
