@@ -1,5 +1,5 @@
 <article class="detail-container <%= hidden ? 'hidden' : '' %>">
-    <div class=" detail-container_content">
+    <div class="detail-container_content">
         <h4>
             <%= detailCoffe.name %>
         </h4>
@@ -10,15 +10,13 @@
         </p>
         <p>Origine: <%= detailCoffe.origin %>
         </p>
-        <p>Prix au kg: <%=detailCoffe.price_kg %> €
+        <p>Prix au kg: <%= detailCoffe.price_kg %> €</p>
+        <p>Disponibilité : <%= detailCoffe.available ? "En stock" : "Rupture de stock" %>
         </p>
-        <p>Disponibilité : <%=detailCoffe.available ? "En stock" : "Rupture de stock" %>
-        </p>
-        <p></p>
     </div>
     <div class="button-discover">
         <button class="button-discover_content">
-            <a href="/">Retour</a>
+            <a href="/detail/<%= detailCoffe.id %>">Découvrir</a>
         </button>
     </div>
 </article>

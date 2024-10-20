@@ -22,12 +22,12 @@ app.use(router);
 
 // Middleware 404
 app.use((req, res) => {
-  console.error("404", req.path);
-  res.status(404).render("errors/404");
+	console.error("404", req.path);
+	res.status(404).render("errors/404");
 });
 
 // On démarre un serveur HTTP
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}`);
+	console.log(`Listening on http://localhost:${PORT}`);
 });
